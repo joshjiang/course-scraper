@@ -8,7 +8,7 @@ r  = requests.get("http://" + "catalog.unc.edu/courses/musc/")
 
 data = r.text
 
-soup = BeautifulSoup(data)
+soup = BeautifulSoup(data, "lxml")
 html = ""
 i = 0
 
